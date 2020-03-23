@@ -38,17 +38,6 @@ CREATE TABLE IF NOT EXISTS `full-stack-ecommerce`.`product` (
 ENGINE=InnoDB
 AUTO_INCREMENT = 1;
 
--- -----------------------------------------------------
--- Table `full-stack-ecommerce`.`student`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `full-stack-ecommerce`.`student` (
-  `roll_no` BIGINT(20) NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(255) DEFAULT NULL,
-  `semester` INT,
-  PRIMARY KEY (`roll_no`)
-) 
-ENGINE=InnoDB
-AUTO_INCREMENT = 1;
 
 -- -----------------------------------------------------
 -- Add sample data
@@ -85,11 +74,3 @@ UNIT_PRICE, CATEGORY_ID, DATE_CREATED)
 VALUES ('BOOK-TECH-1004', 'The Go Programming Language: A to Z', 'Learn Go',
 'assets/images/products/placeholder.png'
 ,1,100,24.99,1, NOW());
-
-INSERT INTO STUDENT (NAME, SEMESTER)
-VALUES ('VICKY', '4');
-
-INSERT INTO STUDENT (NAME, SEMESTER)
-VALUES ('SHAKTI', '1');
-
-
